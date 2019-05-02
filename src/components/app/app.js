@@ -11,9 +11,9 @@ import './app.css';
 const App =()=>{
 
   const todoData = [
-    { label: 'Learn Vue.js', important: false, id: 1 },
-    { label: 'Make Awesome App', important: true, id: 2 },
-    { label: 'Learn React.js', important: false, id: 3 }
+    { label: 'Learn React.js', important: false, id: 1 },
+    { label: 'Learn Vue.js', important: true, id: 2 },
+    { label: 'Make Awesome app', important: false, id: 3 }
   ];
 
   return (
