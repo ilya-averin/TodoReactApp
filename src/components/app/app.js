@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import AppHeader from '../app-header';
 import SearchPanel from '../search-panel';
@@ -8,7 +8,11 @@ import ItemStatusFilter from '../item-status-filter';
 import './app.css';
 
 
-const App =()=>{
+export default class App extends {
+
+	state = {
+
+	};
 
   const todoData = [
     { label: 'Learn React.js', important: false, id: 1 },
@@ -24,7 +28,8 @@ const App =()=>{
         <ItemStatusFilter />
       </div>
 
-      <TodoList todos={todoData} />
+      <TodoList todos={todoData}
+				onDeleted = { (id) => console.log('del', id)}/>
     </div>
   );
 };
